@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Hello</title>
+	</head>
+	<body>
+		Hello,<b>{{user.screen_name}}</b>,您的朋友信息如下: <a href='/logout'>退出</a><p></p>
+		{% for friend in friends %}
+			{{friend.screen_name}}-->{{friend.description}}-->{{friend.province}}-->{{friend.city}}<p></p>
+		{% endfor %}
+	</body>
+</html>
+
+
